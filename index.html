@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpaca Killa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>        
+       <h1>ALPAKA KILLA</h1>
+<!-- Butom desplegable hamburguer -->
+        <span class="hamburguer" onclick="togglemenu()">&#9776;</span>       
+<!-- Contenido del butom hamburguer        -->
+    <nav>
+     <ul id="nav-menu">
+       <li><a href="#">Inicio</a></li>
+       <li><a href="#">Productos</a></li>
+       <li><a href="#">Nosotros</a></li>
+       <li><a href="#">Contacto</a></li>            
+     </ul>
+    </nav>
+<!-- Icono de Home  -->
+    <div class="icon-bar"></div>
+    <!-- Banner -->
+    <a href="#" title="Inicio"><i class="fas fa-home"></i></a>
+    </header>
+    <div class="banner">
+    <p>INTIRAYMI</P>    
+     </div>
+<!-- Tarjetas de productos -->
+    <section class="Productos">
+        <div class="accesorios">
+            <img src="./Fotos/Estolas.png" alt="Estolas">
+            <h2>Estolas</h2>
+            <p>Nuestras estolas estan elaboradas con la exquisita combinación de baby alpaca y seda. Esta opción acogedora será tu compañera perfecta en tu día a día, ofreciendo una elegancia transicional que te mantendrá a la moda en cualquier estación. | Material predominante: Baby Alpaca</p>
+            <p><strong>Precio: S/140.00</strong></p>
+            <form action="/add-to-cart" method="post" class="accesorios-form">
+                <label for="color1">Color:</label>
+                <select id="color1" name="color" required>
+                    <option value="naranja">naranja</option>
+                    <option value="celeste">celeste</option>
+                </select>
+                <label for="quantity1">Cantidad</label>
+                <input type="number" id="quantity1" name="quantity" value="1" min="1" required>
+                <button type="submit">Agregar al carrito</button>
+            </form>            
+        </div>
+        <div class="accesorios">
+            <img src="./Fotos/gorros.png" alt="Gorros">
+            <h2>Gorros</h2>
+            <p>Disfruta de una comodidad irresistible en días fríos con nuestros gorros, elaborados en 100% baby alpaca y diseñado con un agradable tejido. ¡Mantén tu cabeza abrigada con estilo y suavidad incomparable con este encantador gorro! | Material predominante: Baby Alpaca</p>
+            <p><strong>Precio: S/80.00</strong></p>
+            <form action="/add-to-cart" method="post" class="accesorios-form">
+                <label for="color2">Color:</label>
+                <select id="color2" name="color" required>
+                    <option value="violeta">violeta</option>
+                    <option value="azul">azul</option>
+                </select>
+                <label for="quantity2">Cantidad</label>
+                <input type="number" id="quantity2" name="quantity" value="1" min="1" required>
+                <button type="submit">Agregar al carrito</button>
+            </form>                   
+        </div>
+        <div class="accesorios">
+            <img src="./Fotos/guantes.png" alt="Guantes">
+            <h2>Guantes</h2>
+            <p>Los guantes Wolyn están confeccionados con delicada baby alpaca y presentan elegantes flecos. Estos accesorios te brindan una experiencia de suavidad y calidez incomparables. Disfruta de la sensación envolvente de la baby alpaca. | Material predominante: Baby Alpaca</p>
+            <p><strong>Precio: S/50.00</strong></p>
+            <form action="/add-to-cart" method="post" class="accesorios-form">
+                <label for="color3">Color:</label>
+                <select id="color3" name="color" required>
+                    <option value="rosa">rosa</option>
+                    <option value="negro">negro</option>
+                </select>
+                <label for="quantity3">Cantidad</label>
+                <input type="number" id="quantity3" name="quantity" value="1" min="1" required>
+                <button type="submit">Agregar al carrito</button>
+            </form>                   
+        </div>
+        <div class="accesorios">
+            <img src="./Fotos/Chalina.png"  alt="Chalina">
+            <h2>Chalina</h2>
+            <p>La chalina de baby alpaca es un accesorio versátil y elegante. Con su diseño a rayas, te permite disfrutar de diferentes estilos que brindan una sensación de lujo y calidez. Encuéntrala en una amplia gama de colores. | Material predominante: Baby Alpaca</p>
+            <p><strong>Precio: S/120.00</strong></p>
+            <form action="/add-to-cart" method="post" class="accesorios-form">
+                <label for="color4">Color:</label>
+                <select id="color4" name="color" required>
+                    <option value="veige">veige</option>
+                    <option value="gris">gris</option>
+                </select>
+                <label for="quantity4">Cantidad</label>
+                <input type="number" id="quantity4" name="quantity" value="1" min="1" required>
+                <button type="submit">Agregar al carrito</button>
+            </form>                   
+        </div>
+    </section>
+<!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Alpaca Killa.Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
